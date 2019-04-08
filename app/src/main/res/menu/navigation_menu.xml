@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+    <item android:id="@+id/table_order"
+        android:title="Table Order" />
+
+    <item android:id="@+id/delivery_order"
+        android:title="Delivery Order"/>
+
+    </group>
+
+    <item android:title="Personal Information"
+        android:id="@+id/person_info"/>
+
+    <item android:id="@+id/log_out"
+        android:title="Log Out"/>
+
+
+</menu>

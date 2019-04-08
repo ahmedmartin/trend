@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    tools:context=".person_info">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/update_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sign_in_layout"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:textColor="@android:color/background_light"
+                android:textColorLink="@android:color/black"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/update_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sign_in_layout"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:textColor="@android:color/background_light"
+                android:textColorLink="@android:color/black"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/update_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sign_in_layout"
+            android:ems="10"
+            android:gravity="left"
+            android:hint="Email..."
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/update_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sign_in_layout"
+            android:ems="10"
+            android:gravity="left"
+            android:hint="Address.."
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="@android:color/black"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/update_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sign_in_layout"
+            android:ems="10"
+            android:gravity="left"
+            android:hint="phone..."
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="@android:color/black"
+            android:textSize="22sp" />
+
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/menuitem_background"
+            android:onClick="update"
+            android:text="update"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@android:drawable/list_selector_background"
+            android:onClick="change_password"
+            android:text="Change Password"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
